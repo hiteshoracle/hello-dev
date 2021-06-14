@@ -9,7 +9,7 @@ env:
   exportedVariables:
     - testEnv
   vaultVariables:
-    "secretKey": "1ao03bcd43d"       # secret-id (in OCI ID format) STORED IN OCI Vault Service
+    "secretKey1": "ocid1.vaultsecret.oc1.phx.amaaaaaab6fywtyaqfobutcenrpi6crhrguicypg3grccf5lofj3vskrawfa"       # secret-id (in OCI ID format) STORED IN OCI Vault Service
 # inputArtifacts:
 #   - name: hello-dev-jar
 #     location: hello123.class
