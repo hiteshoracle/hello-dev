@@ -19,7 +19,7 @@ steps:
     name: "Build Source"
     timeoutInSeconds: 400
     command:
-      echo $secretKey
+      echo $secretKey1
       echo $testEnv
       export minor_version=135
       cd ${OCI_Source_PROJECT_DIR}
