@@ -19,6 +19,7 @@ steps:
     name: "Build Source"
     timeoutInSeconds: 400
     command:
+      echo "Hello-Hitesh"
       echo $secretKey1
       echo $testEnv
       export minor_version=135
