@@ -8,6 +8,7 @@ env:
     "testEnv" : "testValue1"
   exportedVariables:
     - testEnv
+    - minor_version
   vaultVariables:
     "bankPassword": "ocid1.vaultsecret.oc1.iad.amaaaaaa34lgq7aal4ofspnwfuvjl62ck5oxoxl7ktedpknbdaeoaskcl6hq"       # secret-id (in OCI ID format) STORED IN OCI Vault Service
 # inputArtifacts:
@@ -21,6 +22,7 @@ steps:
     command: |
       echo "hello world"
       echo $bankPassword > abc.txt
+      minor_version = 22
       echo $testEnv
 outputArtifacts:
   - name: ABC
