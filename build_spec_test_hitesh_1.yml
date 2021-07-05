@@ -20,5 +20,9 @@ steps:
     timeoutInSeconds: 400
     command: |
       echo "hello world"
-      echo $bankPassword
+      echo $bankPassword > abc.txt
       echo $testEnv
+outputArtifacts:
+  - name: ABC
+    type: BINARY
+    location: abc.txt
