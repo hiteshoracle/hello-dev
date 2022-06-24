@@ -6,11 +6,14 @@ shell: bash
 env:
   variables:
     "testEnv" : "testValue"
+  vaultVariables:
+    "secretKey" : "${secretPipelineParam}"
 
 steps:
   - type: Command
     name: "Build Source"
     command: |
+      echo $secretKey
       cat /workspace/script/Step0.sh
       echo $testEnv
       mvn clean test
@@ -34,9 +37,3 @@ steps:
           echo "Failure successfully handled"
         timeoutInSeconds: 400
         runAs: root
-
-artifacts:
-  - name: hello-dev-jar
-    type: BINARY
-    files:
-      - target/hello-dev-1.0-SNAPSHOT.jar
