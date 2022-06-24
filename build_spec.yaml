@@ -7,7 +7,7 @@ env:
   variables:
     "testEnv" : "testValue"
   vaultVariables:
-    "secretKey" : ${secretPipelineParam}
+    "secretKey" : "ocid1.vaultsecret.oc1.iad.amaaaaaa34lgq7aaiqsrkyfz6b4nxpb5rfmtgn6vzlqupvwauwafxbizewqq"
 steps:
   - type: Command
     name: "Build Source"
