@@ -13,8 +13,7 @@ steps:
     name: "Build Source"
     command: |
       echo "secret => ${secretPipelineParam}"
-      echo $secretKey
-      cat /workspace/script/Step0.sh
+      echo $secretKeY
       echo $testEnv
       mvn clean test
       mvn clean package
