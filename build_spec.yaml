@@ -12,7 +12,6 @@ steps:
   - type: Command
     name: "Build Source"
     command: |
-      sleep 300
       echo "secret => ${secretPipelineParam}"
       echo $secretKey
       cat /workspace/script/Step0.sh
