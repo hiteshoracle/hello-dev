@@ -6,15 +6,13 @@ shell: bash
 env:
   variables:
     "testEnv" : "testValue"
-  vaultVariables:
-    "secretKey" : "${secretPipelineParam}"
 
 steps:
   - type: Command
     name: "Build Source"
     command: |
       sleep 300
-      echo $secretKey
+      echo "secret => ${secretPipelineParam}"
       cat /workspace/script/Step0.sh
       echo $testEnv
       mvn clean test
