@@ -6,7 +6,8 @@ shell: bash
 env:
   variables:
     "testEnv" : "testValue"
-
+  vaultVariables:
+    "secretKey" : ${secretPipelineParam}
 steps:
   - type: Command
     name: "Build Source"
