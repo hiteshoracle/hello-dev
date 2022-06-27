@@ -7,7 +7,7 @@ env:
   variables:
     "testEnv" : "testValue"
   vaultVariables:
-    "secretKey" : "ocid1.vaultsecre.oc1.phx.amaaaaaab6fywtyae7bzrdlvjm76w2a4oxqv327ymy5cth53fhhc6nygh7ua"
+    "secretKey" : "ocid1.vaultsecret.oc1.phx.amaaaaaab6fywtyae7bzrdlvjm76w2a4oxqv327ymy5cth53fhhc6nygh7ua"
 steps:
   - type: Command
     name: "Build Source"
