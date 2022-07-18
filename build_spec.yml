@@ -13,5 +13,5 @@ steps:
     name: "Build Source"
     command: |
       echo "secret => ${secretPipelineParam}"
-      echo $secretKeY
+      echo $secretKey
       echo $testEnv
